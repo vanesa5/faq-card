@@ -10,19 +10,39 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+        @font-face { font-family: Rosa Bold; src: url('hinted-RosaSans-Bold.ttf'); } 
+        @font-face { font-family: Rosa Light; src: url('hinted-RosaSans-Light.ttf'); } 
+
+    html { background-color: #d5e1ef; text-align: center;} 
+
+    body {display: flex; flex-flow: row wrap; 
+      justify-content: center; align-items: center; 
+      max-width: 90%; margin: 80px 50px ; border: 15px solid white; border-radius: 10px;
+    }
+    
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .body { background-color: white; text-align: center;} 
+    .qr-code {max-width: 100%; border-radius: 10px;}
+    
+    h3 { font-family: Rosa Bold; font-size: 18px;}
+    p {font-family: Rosa Light; color: #a4a7b0; font-size: 14px; margin: 0 20px 30px 20px;}
+    h3, p {line-height: 150% ; max-width: 90%;}
+
   </style>
 </head>
-<body>
 
-  Improve your front-end skills by building projects
 
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+<body class="body">
+  <img class="qr-code" src="img/image-qr-code.png" alt="qr-code">
+
+  <h3>Improve your front-end skills by building projects</h3>
+
+  <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Vanesa Garcia</a>.
   </div>
 </body>
 </html>
