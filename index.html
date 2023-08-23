@@ -15,34 +15,41 @@
 
     html { background-color: #d5e1ef; text-align: center;} 
 
-    body {display: flex; flex-flow: row wrap; 
-      justify-content: center; align-items: center; 
-      max-width: 90%; margin: 80px 50px ; border: 15px solid white; border-radius: 10px;
+    .main-content { display: flex; flex-flow: row wrap; 
+      justify-content: center; align-items: center;     
     }
-    
+    .body {margin: auto; max-width: 320px; max-height: 500px;}
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    .body { background-color: white; text-align: center;} 
+    .main-content {max-width: 375px; background-color: white; margin: 18% 6%; border: 15px solid white; border-radius: 10px;} 
     .qr-code {max-width: 100%; border-radius: 10px;}
     
-    h3 { font-family: Rosa Bold; font-size: 18px;}
-    p {font-family: Rosa Light; color: #a4a7b0; font-size: 14px; margin: 0 20px 30px 20px;}
-    h3, p {line-height: 150% ; max-width: 90%;}
+    h3 { font-family: Rosa Bold; font-size: 16px;}
+    p {font-family: Rosa Light; color: #a4a7b0; font-size: 12px; margin: 0 20px 30px 20px;}
+    h3, p {line-height: 150% ; max-width: 80%;}
 
+    /* Style adjustments for screen larger than 375px */
+
+    @media only screen and (min-width: 765px){
+      .body{margin-top: 150px; }
+    }
   </style>
 </head>
 
 
 <body class="body">
+  <div class="main-content">
   <img class="qr-code" src="img/image-qr-code.png" alt="qr-code">
 
   <h3>Improve your front-end skills by building projects</h3>
 
   <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-  
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Vanesa Garcia</a>.
-  </div>
+  </div> 
+
+</div>
 </body>
 </html>
